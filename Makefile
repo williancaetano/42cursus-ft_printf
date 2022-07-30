@@ -6,7 +6,7 @@
 #    By: wcaetano <wcaetano@student.42.rio>         +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/07/06 20:23:44 by wcaetano          #+#    #+#              #
-#    Updated: 2022/07/19 20:15:16 by wcaetano         ###   ########.fr        #
+#    Updated: 2022/07/30 18:40:15 by wcaetano         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -20,7 +20,8 @@ BONUS_OBJS := $(BONUS_SRCS:.c=.o)
 
 NAME := libftprintf.a
 
-CFLAGS := -Wall -Wextra -Werror
+CFLAGS := -g -Wall -Wextra -Werror
+
 CC := cc
 
 all: $(NAME)

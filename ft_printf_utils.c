@@ -6,7 +6,7 @@
 /*   By: wcaetano <wcaetano@student.42.rio>         +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/07/19 20:07:10 by wcaetano          #+#    #+#             */
-/*   Updated: 2022/07/23 16:34:33 by wcaetano         ###   ########.fr       */
+/*   Updated: 2022/07/30 18:36:35 by wcaetano         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -65,10 +65,9 @@ int	ft_putptr(unsigned long long n)
 	i = 0;
 	base = LHEX_BASE;
 	chars = 0;
+	write(1, "0x", 2);
 	if (n == 0)
-		return (write(1, "(nil)", 5));
-	else
-		write(1, "0x", 2);
+		return (write(1, "0", 1) + 2);
 	while (n)
 	{
 		buf[i++] = base[n % 16];
